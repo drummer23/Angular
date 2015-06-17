@@ -1,0 +1,5 @@
+{ "records": [
+  {"name": "Zurich", "zip":"8000"},
+  {"name": "Uster", "zip": "8610"},
+  {"name": "Winterthur", "zip": "8400"}
+]}
