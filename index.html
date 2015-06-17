@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <script src="js/angular.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<div class="row">
+    <div class="col-xs-6">
+        <label>Name:</label>
+        <input type="text" data-ng-model="yourName" placeholder="Enter a name here"><br>
+        <input type="radio" ng-model="sex" name="sex" value="male">male<br>
+        <input type="radio" ng-model="sex" name="sex" value="female">female<br>
+    </div>
+
+    <div class="col-xs-6">
+        Hello <span class="{{sex}}">{{yourName}}</span><br>
+        seams like your a {{sex}}
+    </div>
+</div>
+
+</body>
+</html>
