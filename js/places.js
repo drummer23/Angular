@@ -11,4 +11,10 @@ app.controller('PlacesCtrl', function($scope,$http) {
         $scope.places = response.records;
     });
 
+    $scope.addPlace = function () {
+        $scope.places.push({name: $scope.formPlaceName, zip: $scope.formPlaceZip});
+        $scope.formPlaceName = '';
+        $scope.formPlaceZip = '';
+    }
+
 });

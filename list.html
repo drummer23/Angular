@@ -10,15 +10,20 @@
 </head>
 <body>
 
-<div class="row">
+
     <div  ng-controller="PlacesCtrl">
         <ul>
             <li ng-repeat="place in places">
-                {{place.name}}, {{place.zip}}
+                <input type="checkbox" ng-model="place.visited">
+                <span class="visited-{{place.visited}}">{{place.name}}, {{place.zip}}</span>
             </li>
         </ul>
+        <form class="form-horizontal">
+            <input type="text" ng-model="formPlaceName">
+            <input type="text" ng-model="formPlaceZip">
+            <button ng-click="addPlace()"><i class="glyphicon-plus"></i>Add</button>
+        </form>
     </div>
-</div>
 
 </body>
 </html>

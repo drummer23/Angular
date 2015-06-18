@@ -7,3 +7,7 @@
     font-weight: bold;
     color : deeppink;
 }
+
+.visited-true {
+    text-decoration: line-through;   
+}
