@@ -1,3 +1,5 @@
+var app = angular.module('myApp', []);
+
 app.controller('PlacesCtrl', function($scope,$http) {
 
     //add data
@@ -7,7 +9,7 @@ app.controller('PlacesCtrl', function($scope,$http) {
     ];
 
     //overwrite data from request
-    $http.get("data/places.json").success(function(response) {
+    $http.get("./places.json").success(function(response) {
         $scope.places = response.records;
     });
 
